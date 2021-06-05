@@ -20,5 +20,6 @@ jobs:
         run: |
             mkdir -p texturepack_source
             mkdir -p texturepack_dest
-            wget -O - https://github.com/FaithfulTeam/Faithful/raw/releases/1.17.zip | (cd texturepack_source && unzip -)
+            wget -O /tmp/z.$$ https://github.com/FaithfulTeam/Faithful/raw/releases/1.17.zip && (cd test && unzip /tmp/z.$$)
             python3 convert.py
+            ls -la texturepack_dest
