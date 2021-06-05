@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+texturepack_source/
+texturepack_dest/
+soothing32_5789/
+rpg16/
+data/data2.yaml

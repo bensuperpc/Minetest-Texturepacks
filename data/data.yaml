@@ -1,0 +1,39 @@
+TextureConverter:
+- Config: null
+  options:
+  - Version: 7
+- BlockList: null
+  Blocks:
+# Sapling: https://minecraft.fandom.com/wiki/Sapling
+  - Id: acacia_sapling
+    MCNamespacedID: acacia_sapling
+    MCNamespacedPath: assets/minecraft/textures/block/acacia_sapling.png
+    MTNamespacedID: default_acacia_sapling
+    MTNamespacedPath: default/default_acacia_sapling.png
+  - Id: oak_sapling
+    MCNamespacedID: oak_sapling
+    MTNamespacedID: moretrees_oak_sapling
+  - Id: spruce_sapling
+    MCNamespacedID: spruce_sapling
+    MTNamespacedID: moretrees_spruce_sapling
+  - Id: birch_sapling
+    MCNamespacedID: birch_sapling
+    MTNamespacedID: moretrees_birch_sapling
+# Wood: https://minecraft.fandom.com/wiki/Wood
+  - Id: oak_wood
+    MCNamespacedID: oak_wood
+    MTNamespacedID: moretrees_oak_wood
+  - Id: spruce_wood
+    MCNamespacedID: spruce_wood
+    MTNamespacedID: moretrees_spruce_wood
+  - Id: jungle_wood
+    MCNamespacedID: jungle_wood
+    MTNamespacedID: default_emergent_jungle_sapling
+- Metadata: null
+  Meta:
+# Sapling: https://minecraft.fandom.com/wiki/Sapling
+  - Id: pack
+    MCNamespacedID: pack.png
+    MCNamespacedPath: pack.png
+    MTNamespacedID: screenshot.png
+    MTNamespacedPath: screenshot.png

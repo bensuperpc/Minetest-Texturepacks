@@ -1,0 +1,24 @@
+name: Minetest
+
+on:
+  schedule:
+  - cron:  "0 23 */7 * *"
+  push:
+  workflow_dispatch:
+
+jobs:
+  Minetest:
+    name: Minetest-converters
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Code"
+        uses: actions/checkout@v2.3.4
+        with:
+          submodules: 'recursive'
+          fetch-depth: 0
+      - name: build
+        run: |
+            mkdir -p texturepack_source
+            mkdir -p texturepack_dest
+            wget -O - https://github.com/FaithfulTeam/Faithful/raw/releases/1.17.zip | (cd texturepack_source && unzip -)
+            python3 convert.py
